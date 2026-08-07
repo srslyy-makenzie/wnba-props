@@ -1,0 +1,25 @@
+# Pipeline configuration (PRD §6, §9)
+
+paths:
+  raw_data_dir: "data/raw"
+  processed_data_dir: "data/processed"
+
+data_sources:
+  play_by_play_provider: "TBD"     # e.g. sportradar, genius_sports, stats_wnba
+  odds_provider: "the_odds_api"    # PRD §6 candidate source
+
+ev:
+  # Flag a bet as +EV when model_prob exceeds de-vigged market_prob by this many
+  # percentage points (PRD §9, step 3). Expressed as a fraction, e.g. 0.03 = 3pp.
+  edge_threshold: 0.03
+
+model:
+  # Candidate models per PRD §8: "heuristic_baseline", "logistic_regression", "xgboost"
+  type: "heuristic_baseline"
+  random_seed: 42
+
+news_adjustment:
+  # Same-day news layer (PRD §13, stretch goal). Disabled until v1 structured
+  # signals (injury designations, confirmed lineups) are wired up.
+  enabled: false
+  mode: "structured_only"   # "structured_only" | "structured_and_llm_extraction"

@@ -1,0 +1,17 @@
+# Core
+pandas>=2.2
+numpy>=1.26
+pyyaml>=6.0
+python-dotenv>=1.0
+requests>=2.31
+
+# Modeling
+scikit-learn>=1.4
+xgboost>=2.0
+
+# Odds / API access
+# (using requests above; add a dedicated odds-api SDK here if you pick one)
+
+# Dev / testing
+pytest>=8.0
+ruff>=0.4
