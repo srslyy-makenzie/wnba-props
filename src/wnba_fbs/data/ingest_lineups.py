@@ -1,31 +1,67 @@
-"""Starting lineup ingestion, historical and daily (PRD §6).
+"""Starting lineup ingestion via ESPN's public API (PRD §6).
 
 Historical lineups feed feature engineering; daily/pre-tip-off lineups
-feed same-day predictions and the news adjustment layer.
+feed same-day predictions and the news adjustment layer (PRD §13).
+
+ESPN's boxscore payload marks each rostered player with a `starter`
+boolean. This is generally only reliably populated close to tip-off for
+today's games (ESPN publishes projected/confirmed starters shortly
+before the game) and is always populated after the fact for completed
+games.
 """
 
 from __future__ import annotations
 
 import pandas as pd
 
+from .espn_client import get_summary
 
-def fetch_historical_lineups(season: str) -> pd.DataFrame:
-    """Fetch historical starting lineups for a season.
+
+def _parse_lineup(summary: dict, event_id: str) -> pd.DataFrame:
+    rows = []
+    boxscore = summary.get("boxscore", {})
+    for team_entry in boxscore.get("players", []):
+        team_id = (team_entry.get("team") or {}).get("id")
+        for stat_group in team_entry.get("statistics", []):
+            for athlete_entry in stat_group.get("athletes", []):
+                athlete = athlete_entry.get("athlete", {})
+                rows.append(
+                    {
+                        "game_id": event_id,
+                        "team_id": team_id,
+                        "player_id": athlete.get("id"),
+                        "player_name": athlete.get("displayName"),
+                        "position": (athlete.get("position") or {}).get("abbreviation"),
+                        "is_starter": bool(athlete_entry.get("starter", False)),
+                    }
+                )
+    return pd.DataFrame(rows)
+
+
+def fetch_lineup(event_id: str) -> pd.DataFrame:
+    """Fetch the lineup (starters + bench) for one game.
+
+    Works for both completed games (historical backfill) and today's
+    games once ESPN has posted projected/confirmed starters — check the
+    `is_starter` column and re-fetch closer to tip-off if it looks empty.
 
     Returns:
-        DataFrame with columns: game_id, team, player_id, position, is_starter.
+        DataFrame with columns: game_id, team_id, player_id, player_name,
+        position, is_starter.
     """
-    raise NotImplementedError("Wire up historical lineup source (PRD §6).")
+    summary = get_summary(event_id)
+    return _parse_lineup(summary, event_id)
 
 
-def fetch_daily_lineups(date: str) -> pd.DataFrame:
-    """Fetch confirmed or projected starting lineups for a given date.
+def fetch_historical_lineups(event_ids: list[str]) -> pd.DataFrame:
+    """Fetch lineups for a batch of completed games (e.g. a backfill run).
 
-    Used same-day, close to tip-off, per the news adjustment layer
-    (PRD §13 stretch goal, v1: structured lineup confirmations).
+    Args:
+        event_ids: List of ESPN event ids, e.g. from
+            ingest_pbp.fetch_game_ids called across a season's dates.
 
     Returns:
-        DataFrame with columns: game_id, team, player_id, position,
-        status ("confirmed" | "probable" | "out").
+        Concatenated DataFrame in the same shape as fetch_lineup().
     """
-    raise NotImplementedError("Wire up daily lineup / injury report source (PRD §6, §13).")
+    frames = [fetch_lineup(eid) for eid in event_ids]
+    return pd.concat(frames, ignore_index=True) if frames else pd.DataFrame()
