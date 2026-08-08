@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "wnba-fbs"
 version = "0.1.0"
 description = "WNBA first-basket-scorer prediction and +EV odds comparison"
-requires-python = ">=3.10"
+requires-python = ">=3.9"
 readme = "README.md"
 
 [tool.setuptools.packages.find]
