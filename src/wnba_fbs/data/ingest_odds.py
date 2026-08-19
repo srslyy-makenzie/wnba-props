@@ -19,6 +19,9 @@ import os
 
 import pandas as pd
 import requests
+from dotenv import load_dotenv
+
+load_dotenv()
 
 ODDS_API_KEY = os.environ.get("ODDS_API_KEY")
 BASE_URL = "https://api.the-odds-api.com/v4"
@@ -69,24 +72,35 @@ def list_available_markets(event_id: str, region: str = "us") -> list[str]:
     Use this before calling fetch_fbs_odds() to confirm FBS_MARKET_KEY
     (or whatever key represents first-basket-scorer) is really offered.
 
+    Probes markets one at a time rather than all in a single request:
+    The Odds API returns a 422 for the *entire* request if any single
+    market key in a comma-separated list isn't valid for this sport, so
+    a batched probe can't distinguish "not offered" from "request
+    rejected." Costs more API calls but degrades per-market instead of
+    all-or-nothing.
+
     Returns:
         Sorted list of market keys found across all bookmakers for this event.
     """
     api_key = _require_api_key()
-    # Request a broad set of common player-prop markets; the API only
-    # returns keys that are actually offered, so this doubles as discovery.
-    probe_markets = "player_points,player_rebounds,player_assists,player_first_basket_scorer"
-    resp = requests.get(
-        f"{BASE_URL}/sports/{SPORT_KEY}/events/{event_id}/odds",
-        params={"apiKey": api_key, "regions": region, "markets": probe_markets, "oddsFormat": "american"},
-        timeout=15,
-    )
-    resp.raise_for_status()
-    data = resp.json()
+    probe_markets = ["player_points", "player_rebounds", "player_assists", "player_first_basket_scorer"]
+
     keys = set()
-    for bookmaker in data.get("bookmakers", []):
-        for market in bookmaker.get("markets", []):
-            keys.add(market["key"])
+    for market in probe_markets:
+        resp = requests.get(
+            f"{BASE_URL}/sports/{SPORT_KEY}/events/{event_id}/odds",
+            params={"apiKey": api_key, "regions": region, "markets": market, "oddsFormat": "american"},
+            timeout=15,
+        )
+        if resp.status_code == 422:
+            # This market isn't offered for this sport/event at all — skip it.
+            continue
+        resp.raise_for_status()
+        data = resp.json()
+        for bookmaker in data.get("bookmakers", []):
+            for m in bookmaker.get("markets", []):
+                keys.add(m["key"])
+
     return sorted(keys)
 
 
