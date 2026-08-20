@@ -1,0 +1,67 @@
+name: Daily predictions
+
+# Refreshes web/public/data/predictions.json and pushes it, which triggers
+# Cloudflare's git-connected auto-redeploy of the web app.
+#
+# Timing note: ESPN usually doesn't post confirmed starters until ~30-60
+# min before tip-off (see scripts/predict_today.py's docstring), and WNBA
+# games start at different times through the evening — so a single fixed
+# UTC cron can't land "just before tip-off" for every game. This runs once
+# in the early evening ET as a general refresh; use "Run workflow" below
+# any time you want the freshest possible starters closer to a specific
+# game.
+on:
+  schedule:
+    - cron: "30 21 * * *" # ~5:30pm ET (EDT); shifts to ~4:30pm during EST
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  predict:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      # Per-game play-by-play responses (ingest_pbp.fetch_play_by_play) are
+      # the slow, ESPN-heavy part of the historical backfill and are
+      # cached by event id — a completed game's data never changes, so
+      # this persists across runs and each day only fetches new games.
+      # Gitignored locally; this is Actions-cache-only, never committed.
+      #
+      # first_basket_rates.csv is intentionally NOT cached here: it's
+      # rebuilt every run via --refresh-rates below so newly completed
+      # games actually get folded into the historical rate — caching it
+      # would freeze rates at whatever the first run happened to compute.
+      - uses: actions/cache@v4
+        with:
+          path: data/raw/pbp
+          key: wnba-pbp-cache-${{ github.run_id }}
+          restore-keys: |
+            wnba-pbp-cache-
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run predictions
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+        run: python scripts/predict_today.py --refresh-rates
+
+      - name: Commit and push if predictions changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet -- web/public/data/predictions.json; then
+            echo "No change in predictions.json — nothing to commit."
+            exit 0
+          fi
+          git add web/public/data/predictions.json
+          git commit -m "Update predictions ($(date -u +'%Y-%m-%d %H:%M UTC'))"
+          git push
