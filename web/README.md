@@ -37,23 +37,26 @@ npm run build     # outputs to web/dist
 npm run preview   # serve the production build locally
 ```
 
-## Deploy to Cloudflare Pages
+## Deploy to Cloudflare
 
-Two options:
+This deploys as a Worker serving static assets (Cloudflare's current
+unified path — `wrangler.toml` here uses `[assets]`, not the older
+Pages-specific `pages_build_output_dir`). Two options:
 
 **Cloudflare dashboard (recommended for the ongoing daily-run setup):**
-connect the repo, set the project's root directory to `web`, build
-command to `npm run build`, and output directory to `dist`. Since
-`predictions.json` lives under `web/public/data/`, committing a fresh
-copy after each `predict_today.py` run and pushing is enough to trigger
-a redeploy.
+connect the repo, and in the build settings set the **Path** to `web`
+(this is a monorepo — `package.json`/`wrangler.toml` live in `web/`,
+not the repo root), build command to `npm run build`, deploy command to
+`npx wrangler deploy`. Since `predictions.json` lives under
+`web/public/data/`, committing a fresh copy after each
+`predict_today.py` run and pushing is enough to trigger a redeploy.
 
 **CLI (one-off or manual deploys):**
 
 ```bash
 npm run build
-npx wrangler pages deploy dist --project-name=wnba-props
+npx wrangler deploy
 ```
 
-`wrangler.toml` in this directory pins the project name and output dir
-so plain `npx wrangler pages deploy` also works after a build.
+`wrangler.toml` in this directory pins the project name and asset
+directory so plain `npx wrangler deploy` also works after a build.
