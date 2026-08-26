@@ -167,18 +167,46 @@ header.page-head {
   margin-top: 2px;
 }
 
-.twitter-board {
+.tweet-board {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 16px;
+  margin-bottom: 16px;
 }
 
-.twitter-embed {
+.tweet-embed {
   background: var(--panel);
   border: 1px solid var(--panel-border);
   border-radius: 4px;
   overflow: hidden;
   min-height: 60px;
+}
+
+.follow-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 12px;
+}
+
+.follow-links-label {
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 11px;
+}
+
+.follow-link {
+  color: var(--text);
+  text-decoration: none;
+  border-bottom: 1px solid var(--panel-border);
+}
+
+.follow-link:hover {
+  color: var(--amber);
+  border-bottom-color: var(--amber-dim);
 }
 
 .market-tabs {

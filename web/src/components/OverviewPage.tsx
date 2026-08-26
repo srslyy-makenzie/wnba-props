@@ -2,7 +2,8 @@ import { useMemo } from "react";
 import type { ScheduleGame } from "../types";
 import { badgeColor } from "../lib/badgeColor";
 import { TEAM_TWITTER_HANDLES, FIXED_TWITTER_HANDLES } from "../lib/twitterHandles";
-import TwitterTimeline from "./TwitterTimeline";
+import { FEATURED_TWEETS } from "../lib/featuredTweets";
+import TweetEmbed from "./TweetEmbed";
 
 interface Props {
   schedule: ScheduleGame[];
@@ -68,9 +69,23 @@ export default function OverviewPage({ schedule = [] }: Props) {
 
       <section className="overview-section">
         <h2 className="overview-heading">Latest from X</h2>
-        <div className="twitter-board">
+        {FEATURED_TWEETS.length === 0 ? (
+          <p className="empty-state">
+            No tweets pinned yet — add some in <code>web/src/lib/featuredTweets.ts</code>.
+          </p>
+        ) : (
+          <div className="tweet-board">
+            {FEATURED_TWEETS.map((url) => (
+              <TweetEmbed key={url} url={url} />
+            ))}
+          </div>
+        )}
+        <div className="follow-links">
+          <span className="follow-links-label">Follow:</span>
           {twitterHandles.map((handle) => (
-            <TwitterTimeline key={handle} handle={handle} />
+            <a key={handle} className="follow-link" href={`https://twitter.com/${handle}`}>
+              @{handle}
+            </a>
           ))}
         </div>
       </section>
