@@ -6,4 +6,5 @@
 // and add it below.
 export const FEATURED_TWEETS: string[] = [
   "https://x.com/ShamsCharania/status/2092629373870395429",
+  "https://x.com/WNBA/status/2092615483858034795",
 ];
