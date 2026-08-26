@@ -7,4 +7,5 @@
 export const FEATURED_TWEETS: string[] = [
   "https://x.com/ShamsCharania/status/2092629373870395429",
   "https://x.com/WNBA/status/2092615483858034795",
+  "https://x.com/YahooSports/status/2092640482450882810",
 ];
