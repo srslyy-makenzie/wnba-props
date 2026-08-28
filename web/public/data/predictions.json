@@ -1,64 +1,120 @@
 {
-  "generated_at": "Aug 26, 2026 09:08 PM",
+  "generated_at": "Aug 28, 2026 04:28 AM",
   "schedule": [
     {
-      "event_id": "401857176",
-      "start_time_iso": "2026-08-26T23:00Z",
-      "start_time_display": "Wed, August 26th at 7:00 PM EDT",
+      "event_id": "401857180",
+      "start_time_iso": "2026-08-28T23:30Z",
+      "start_time_display": "Fri, August 28th at 7:30 PM EDT",
       "status": "Scheduled",
       "venue": {
-        "name": "Mohegan Sun Arena",
-        "city": "Uncasville",
-        "state": "CT"
+        "name": "Gateway Center",
+        "city": "College Park",
+        "state": "GA"
       },
       "broadcasts": [
-        "KPIX+",
-        "NBC Sports BO",
+        "ION",
         "WNBA League Pass"
       ],
       "teams": {
-        "18": {
-          "display_name": "Connecticut Sun",
-          "abbreviation": "CON",
+        "20": {
+          "display_name": "Atlanta Dream",
+          "abbreviation": "ATL",
           "home_away": "home",
-          "record": "10-27"
+          "record": "25-13"
         },
-        "129689": {
-          "display_name": "Golden State Valkyries",
-          "abbreviation": "GS",
+        "132052": {
+          "display_name": "Portland Fire",
+          "abbreviation": "POR",
           "home_away": "away",
-          "record": "26-11"
+          "record": "15-23"
         }
       }
     },
     {
-      "event_id": "401857177",
-      "start_time_iso": "2026-08-27T02:00Z",
-      "start_time_display": "Wed, August 26th at 10:00 PM EDT",
+      "event_id": "401857181",
+      "start_time_iso": "2026-08-28T23:30Z",
+      "start_time_display": "Fri, August 28th at 7:30 PM EDT",
       "status": "Scheduled",
       "venue": {
-        "name": "Climate Pledge Arena",
-        "city": "Seattle",
-        "state": "WA"
+        "name": "Gainbridge Fieldhouse",
+        "city": "Indianapolis",
+        "state": "IN"
       },
       "broadcasts": [
-        "CW Seattle",
-        "Prime Video-Seattle",
-        "TSN",
-        "USA Net"
+        "ION",
+        "WNBA League Pass"
       ],
       "teams": {
-        "14": {
-          "display_name": "Seattle Storm",
-          "abbreviation": "SEA",
+        "5": {
+          "display_name": "Indiana Fever",
+          "abbreviation": "IND",
           "home_away": "home",
-          "record": "7-31"
+          "record": "25-14"
+        },
+        "18": {
+          "display_name": "Connecticut Sun",
+          "abbreviation": "CON",
+          "home_away": "away",
+          "record": "10-28"
+        }
+      }
+    },
+    {
+      "event_id": "401857182",
+      "start_time_iso": "2026-08-29T02:00Z",
+      "start_time_display": "Fri, August 28th at 10:00 PM EDT",
+      "status": "Scheduled",
+      "venue": {
+        "name": "Michelob ULTRA Arena",
+        "city": "Las Vegas",
+        "state": "NV"
+      },
+      "broadcasts": [
+        "ION",
+        "TSN",
+        "WNBA League Pass"
+      ],
+      "teams": {
+        "17": {
+          "display_name": "Las Vegas Aces",
+          "abbreviation": "LV",
+          "home_away": "home",
+          "record": "26-13"
         },
         "131935": {
           "display_name": "Toronto Tempo",
           "abbreviation": "TOR",
           "home_away": "away",
-          "record": "11-26"
+          "record": "11-27"
+        }
+      }
+    },
+    {
+      "event_id": "401857183",
+      "start_time_iso": "2026-08-29T02:00Z",
+      "start_time_display": "Fri, August 28th at 10:00 PM EDT",
+      "status": "Scheduled",
+      "venue": {
+        "name": "crypto.com Arena",
+        "city": "Los Angeles",
+        "state": "CA"
+      },
+      "broadcasts": [
+        "ION",
+        "WNBA League Pass"
+      ],
+      "teams": {
+        "6": {
+          "display_name": "Los Angeles Sparks",
+          "abbreviation": "LA",
+          "home_away": "home",
+          "record": "13-25"
+        },
+        "16": {
+          "display_name": "Washington Mystics",
+          "abbreviation": "WSH",
+          "home_away": "away",
+          "record": "24-15"
         }
       }
     }
@@ -71,25 +127,350 @@
       "status": "active",
       "games": [
         {
-          "event_id": "401857176",
+          "event_id": "401857180",
           "teams": {
-            "18": {
-              "display_name": "Connecticut Sun",
-              "abbreviation": "CON"
+            "20": {
+              "display_name": "Atlanta Dream",
+              "abbreviation": "ATL"
             },
-            "129689": {
-              "display_name": "Golden State Valkyries",
-              "abbreviation": "GS"
+            "132052": {
+              "display_name": "Portland Fire",
+              "abbreviation": "POR"
             }
           },
           "is_confirmed_starters": false,
-          "odds_note": "Odds API request failed: 422 Client Error: Unprocessable Entity for url: https://api.the-odds-api.com/v4/sports/basketball_wnba/events/8c94c1b3ead27f83634f28eecbee96ee/odds?apiKey=***&regions=us&markets=player_first_basket_scorer&oddsFormat=american",
+          "odds_note": "Odds API request failed: 422 Client Error: Unprocessable Entity for url: https://api.the-odds-api.com/v4/sports/basketball_wnba/events/c006f8c7eb0093bcd146ea746609a5c1/odds?apiKey=***&regions=us&markets=player_first_basket_scorer&oddsFormat=american",
           "players": [
             {
-              "player_name": "Cecilia Zandalasini",
-              "team_id": "129689",
-              "historical_first_basket_rate": 1.0,
-              "model_prob": 0.5,
+              "player_name": "Allisha Gray",
+              "team_id": "20",
+              "historical_first_basket_rate": 0.5,
+              "model_prob": 0.25000000000000006,
+              "odds_american": null,
+              "market_prob": null,
+              "edge": null,
+              "ev": null,
+              "is_positive_ev": null
+            },
+            {
+              "player_name": "Megan DiLeo",
+              "team_id": "132052",
+              "historical_first_basket_rate": 0.5,
+              "model_prob": 0.25000000000000006,
+              "odds_american": null,
+              "market_prob": null,
+              "edge": null,
+              "ev": null,
+              "is_positive_ev": null
+            },
+            {
+              "player_name": "Emily Engstler",
+              "team_id": "132052",
+              "historical_first_basket_rate": 0.3333333333333333,
+              "model_prob": 0.16666666666666669,
+              "odds_american": null,
+              "market_prob": null,
+              "edge": null,
+              "ev": null,
+              "is_positive_ev": null
+            },
+            {
+              "player_name": "Jordin Canada",
+              "team_id": "20",
+              "historical_first_basket_rate": 0.3333333333333333,
+              "model_prob": 0.16666666666666669,
+              "odds_american": null,
+              "market_prob": null,
+              "edge": null,
+              "ev": null,
+              "is_positive_ev": null
+            },
+            {
+              "player_name": "Rhyne Howard",
+              "team_id": "20",
+              "historical_first_basket_rate": 0.16666666666666666,
+              "model_prob": 0.08333333333333334,
+              "odds_american": null,
+              "market_prob": null,
+              "edge": null,
+              "ev": null,
+              "is_positive_ev": null
+            },
+            {
+              "player_name": "Jordan Harrison",
+              "team_id": "132052",
+              "historical_first_basket_rate": 0.16666666666666666,
+              "model_prob": 0.08333333333333334,
+              "odds_american": null,
+              "market_prob": null,
+              "edge": null,
+              "ev": null,
+              "is_positive_ev": null
+            },
+            {
+              "player_name": "DeWanna Bonner",
+              "team_id": "20",
+              "historical_first_basket_rate": 0.0,
+              "model_prob": 0.0,
+              "odds_american": null,
+              "market_prob": null,
+              "edge": null,
+              "ev": null,
+              "is_positive_ev": null
+            },
+            {
+              "player_name": "Sika Kone",
+              "team_id": "20",
+              "historical_first_basket_rate": 0.0,
+              "model_prob": 0.0,
+              "odds_american": null,
+              "market_prob": null,
+              "edge": null,
+              "ev": null,
+              "is_positive_ev": null
+            },
+            {
+              "player_name": "Indya Nivar",
+              "team_id": "20",
+              "historical_first_basket_rate": 0.0,
+              "model_prob": 0.0,
+              "odds_american": null,
+              "market_prob": null,
+              "edge": null,
+              "ev": null,
+              "is_positive_ev": null
+            },
+            {
+              "player_name": "Naz Hillmon",
+              "team_id": "20",
+              "historical_first_basket_rate": 0.0,
+              "model_prob": 0.0,
+              "odds_american": null,
+              "market_prob": null,
+              "edge": null,
+              "ev": null,
+              "is_positive_ev": null
+            },
+            {
+              "player_name": "Brionna Jones",
+              "team_id": "20",
+              "historical_first_basket_rate": 0.0,
+              "model_prob": 0.0,
+              "odds_american": null,
+              "market_prob": null,
+              "edge": null,
+              "ev": null,
+              "is_positive_ev": null
+            },
+            {
+              "player_name": "Isobel Borlase",
+              "team_id": "20",
+              "historical_first_basket_rate": 0.0,
+              "model_prob": 0.0,
+              "odds_american": null,
+              "market_prob": null,
+              "edge": null,
+              "ev": null,
+              "is_positive_ev": null
+            },
+            {
+              "player_name": "Angel Reese",
+              "team_id": "20",
+              "historical_first_basket_rate": 0.0,
+              "model_prob": 0.0,
+              "odds_american": null,
+              "market_prob": null,
+              "edge": null,
+              "ev": null,
+              "is_positive_ev": null
+            },
+            {
+              "player_name": "Te-Hina Paopao",
+              "team_id": "20",
+              "historical_first_basket_rate": 0.0,
+              "model_prob": 0.0,
+              "odds_american": null,
+              "market_prob": null,
+              "edge": null,
+              "ev": null,
+              "is_positive_ev": null
+            },
+            {
+              "player_name": "Madina Okot",
+              "team_id": "20",
+              "historical_first_basket_rate": 0.0,
+              "model_prob": 0.0,
+              "odds_american": null,
+              "market_prob": null,
+              "edge": null,
+              "ev": null,
+              "is_positive_ev": null
+            },
+            {
+              "player_name": "Shatori Walker-Kimbrough",
+              "team_id": "20",
+              "historical_first_basket_rate": 0.0,
+              "model_prob": 0.0,
+              "odds_american": null,
+              "market_prob": null,
+              "edge": null,
+              "ev": null,
+              "is_positive_ev": null
+            },
+            {
+              "player_name": "Bridget Carleton",
+              "team_id": "132052",
+              "historical_first_basket_rate": 0.0,
+              "model_prob": 0.0,
+              "odds_american": null,
+              "market_prob": null,
+              "edge": null,
+              "ev": null,
+              "is_positive_ev": null
+            },
+            {
+              "player_name": "Frieda Buhner",
+              "team_id": "132052",
+              "historical_first_basket_rate": 0.0,
+              "model_prob": 0.0,
+              "odds_american": null,
+              "market_prob": null,
+              "edge": null,
+              "ev": null,
+              "is_positive_ev": null
+            },
+            {
+              "player_name": "Sania Feagin",
+              "team_id": "132052",
+              "historical_first_basket_rate": 0.0,
+              "model_prob": 0.0,
+              "odds_american": null,
+              "market_prob": null,
+              "edge": null,
+              "ev": null,
+              "is_positive_ev": null
+            },
+            {
+              "player_name": "Sarah Ashlee Barker",
+              "team_id": "132052",
+              "historical_first_basket_rate": 0.0,
+              "model_prob": 0.0,
+              "odds_american": null,
+              "market_prob": null,
+              "edge": null,
+              "ev": null,
+              "is_positive_ev": null
+            },
+            {
+              "player_name": "Luisa Geiselsoder",
+              "team_id": "132052",
+              "historical_first_basket_rate": 0.0,
+              "model_prob": 0.0,
+              "odds_american": null,
+              "market_prob": null,
+              "edge": null,
+              "ev": null,
+              "is_positive_ev": null
+            },
+            {
+              "player_name": "Carla Leite",
+              "team_id": "132052",
+              "historical_first_basket_rate": 0.0,
+              "model_prob": 0.0,
+              "odds_american": null,
+              "market_prob": null,
+              "edge": null,
+              "ev": null,
+              "is_positive_ev": null
+            },
+            {
+              "player_name": "Teja Oblak",
+              "team_id": "132052",
+              "historical_first_basket_rate": 0.0,
+              "model_prob": 0.0,
+              "odds_american": null,
+              "market_prob": null,
+              "edge": null,
+              "ev": null,
+              "is_positive_ev": null
+            },
+            {
+              "player_name": "Amy Okonkwo",
+              "team_id": "132052",
+              "historical_first_basket_rate": 0.0,
+              "model_prob": 0.0,
+              "odds_american": null,
+              "market_prob": null,
+              "edge": null,
+              "ev": null,
+              "is_positive_ev": null
+            },
+            {
+              "player_name": "Nyadiew Puoch",
+              "team_id": "132052",
+              "historical_first_basket_rate": 0.0,
+              "model_prob": 0.0,
+              "odds_american": null,
+              "market_prob": null,
+              "edge": null,
+              "ev": null,
+              "is_positive_ev": null
+            },
+            {
+              "player_name": "Karlie Samuelson",
+              "team_id": "132052",
+              "historical_first_basket_rate": 0.0,
+              "model_prob": 0.0,
+              "odds_american": null,
+              "market_prob": null,
+              "edge": null,
+              "ev": null,
+              "is_positive_ev": null
+            },
+            {
+              "player_name": "Serah Williams",
+              "team_id": "132052",
+              "historical_first_basket_rate": 0.0,
+              "model_prob": 0.0,
+              "odds_american": null,
+              "market_prob": null,
+              "edge": null,
+              "ev": null,
+              "is_positive_ev": null
+            },
+            {
+              "player_name": "Holly Winterburn",
+              "team_id": "132052",
+              "historical_first_basket_rate": 0.0,
+              "model_prob": 0.0,
+              "odds_american": null,
+              "market_prob": null,
+              "edge": null,
+              "ev": null,
+              "is_positive_ev": null
+            }
+          ]
+        },
+        {
+          "event_id": "401857181",
+          "teams": {
+            "5": {
+              "display_name": "Indiana Fever",
+              "abbreviation": "IND"
+            },
+            "18": {
+              "display_name": "Connecticut Sun",
+              "abbreviation": "CON"
+            }
+          },
+          "is_confirmed_starters": false,
+          "odds_note": "Odds API request failed: 422 Client Error: Unprocessable Entity for url: https://api.the-odds-api.com/v4/sports/basketball_wnba/events/bf890f553715b7954a44f36770b69830/odds?apiKey=***&regions=us&markets=player_first_basket_scorer&oddsFormat=american",
+          "players": [
+            {
+              "player_name": "Aliyah Boston",
+              "team_id": "5",
+              "historical_first_basket_rate": 0.4444444444444444,
+              "model_prob": 0.2222222222222222,
               "odds_american": null,
               "market_prob": null,
               "edge": null,
@@ -108,10 +489,10 @@
               "is_positive_ev": null
             },
             {
-              "player_name": "Brittney Griner",
-              "team_id": "18",
-              "historical_first_basket_rate": 0.16666666666666666,
-              "model_prob": 0.08333333333333333,
+              "player_name": "Makayla Timpson",
+              "team_id": "5",
+              "historical_first_basket_rate": 0.2222222222222222,
+              "model_prob": 0.1111111111111111,
               "odds_american": null,
               "market_prob": null,
               "edge": null,
@@ -119,7 +500,18 @@
               "is_positive_ev": null
             },
             {
-              "player_name": "Diamond Miller",
+              "player_name": "Caitlin Clark",
+              "team_id": "5",
+              "historical_first_basket_rate": 0.2222222222222222,
+              "model_prob": 0.1111111111111111,
+              "odds_american": null,
+              "market_prob": null,
+              "edge": null,
+              "ev": null,
+              "is_positive_ev": null
+            },
+            {
+              "player_name": "Brittney Griner",
               "team_id": "18",
               "historical_first_basket_rate": 0.16666666666666666,
               "model_prob": 0.08333333333333333,
@@ -152,8 +544,30 @@
               "is_positive_ev": null
             },
             {
-              "player_name": "Raegan Beers",
+              "player_name": "Diamond Miller",
               "team_id": "18",
+              "historical_first_basket_rate": 0.16666666666666666,
+              "model_prob": 0.08333333333333333,
+              "odds_american": null,
+              "market_prob": null,
+              "edge": null,
+              "ev": null,
+              "is_positive_ev": null
+            },
+            {
+              "player_name": "Lexie Hull",
+              "team_id": "5",
+              "historical_first_basket_rate": 0.1111111111111111,
+              "model_prob": 0.05555555555555555,
+              "odds_american": null,
+              "market_prob": null,
+              "edge": null,
+              "ev": null,
+              "is_positive_ev": null
+            },
+            {
+              "player_name": "Bree Hall",
+              "team_id": "5",
               "historical_first_basket_rate": 0.0,
               "model_prob": 0.0,
               "odds_american": null,
@@ -163,7 +577,95 @@
               "is_positive_ev": null
             },
             {
-              "player_name": "Gianna Kneepkens",
+              "player_name": "Sophie Cunningham",
+              "team_id": "5",
+              "historical_first_basket_rate": 0.0,
+              "model_prob": 0.0,
+              "odds_american": null,
+              "market_prob": null,
+              "edge": null,
+              "ev": null,
+              "is_positive_ev": null
+            },
+            {
+              "player_name": "Monique Billings",
+              "team_id": "5",
+              "historical_first_basket_rate": 0.0,
+              "model_prob": 0.0,
+              "odds_american": null,
+              "market_prob": null,
+              "edge": null,
+              "ev": null,
+              "is_positive_ev": null
+            },
+            {
+              "player_name": "Mercedes Russell",
+              "team_id": "5",
+              "historical_first_basket_rate": 0.0,
+              "model_prob": 0.0,
+              "odds_american": null,
+              "market_prob": null,
+              "edge": null,
+              "ev": null,
+              "is_positive_ev": null
+            },
+            {
+              "player_name": "Michelle Onyiah",
+              "team_id": "5",
+              "historical_first_basket_rate": 0.0,
+              "model_prob": 0.0,
+              "odds_american": null,
+              "market_prob": null,
+              "edge": null,
+              "ev": null,
+              "is_positive_ev": null
+            },
+            {
+              "player_name": "Kelsey Mitchell",
+              "team_id": "5",
+              "historical_first_basket_rate": 0.0,
+              "model_prob": 0.0,
+              "odds_american": null,
+              "market_prob": null,
+              "edge": null,
+              "ev": null,
+              "is_positive_ev": null
+            },
+            {
+              "player_name": "Raven Johnson",
+              "team_id": "5",
+              "historical_first_basket_rate": 0.0,
+              "model_prob": 0.0,
+              "odds_american": null,
+              "market_prob": null,
+              "edge": null,
+              "ev": null,
+              "is_positive_ev": null
+            },
+            {
+              "player_name": "Myisha Hines-Allen",
+              "team_id": "5",
+              "historical_first_basket_rate": 0.0,
+              "model_prob": 0.0,
+              "odds_american": null,
+              "market_prob": null,
+              "edge": null,
+              "ev": null,
+              "is_positive_ev": null
+            },
+            {
+              "player_name": "Tyasha Harris",
+              "team_id": "5",
+              "historical_first_basket_rate": 0.0,
+              "model_prob": 0.0,
+              "odds_american": null,
+              "market_prob": null,
+              "edge": null,
+              "ev": null,
+              "is_positive_ev": null
+            },
+            {
+              "player_name": "Raegan Beers",
               "team_id": "18",
               "historical_first_basket_rate": 0.0,
               "model_prob": 0.0,
@@ -185,7 +687,40 @@
               "is_positive_ev": null
             },
             {
+              "player_name": "Ashlon Jackson",
+              "team_id": "18",
+              "historical_first_basket_rate": 0.0,
+              "model_prob": 0.0,
+              "odds_american": null,
+              "market_prob": null,
+              "edge": null,
+              "ev": null,
+              "is_positive_ev": null
+            },
+            {
+              "player_name": "Grace VanSlooten",
+              "team_id": "5",
+              "historical_first_basket_rate": 0.0,
+              "model_prob": 0.0,
+              "odds_american": null,
+              "market_prob": null,
+              "edge": null,
+              "ev": null,
+              "is_positive_ev": null
+            },
+            {
               "player_name": "Charlisse Leger-Walker",
+              "team_id": "18",
+              "historical_first_basket_rate": 0.0,
+              "model_prob": 0.0,
+              "odds_american": null,
+              "market_prob": null,
+              "edge": null,
+              "ev": null,
+              "is_positive_ev": null
+            },
+            {
+              "player_name": "Gianna Kneepkens",
               "team_id": "18",
               "historical_first_basket_rate": 0.0,
               "model_prob": 0.0,
@@ -218,17 +753,6 @@
               "is_positive_ev": null
             },
             {
-              "player_name": "Ashlon Jackson",
-              "team_id": "18",
-              "historical_first_basket_rate": 0.0,
-              "model_prob": 0.0,
-              "odds_american": null,
-              "market_prob": null,
-              "edge": null,
-              "ev": null,
-              "is_positive_ev": null
-            },
-            {
               "player_name": "Saniya Rivers",
               "team_id": "18",
               "historical_first_basket_rate": 0.0,
@@ -249,169 +773,15 @@
               "edge": null,
               "ev": null,
               "is_positive_ev": null
-            },
-            {
-              "player_name": "Veronica Burton",
-              "team_id": "129689",
-              "historical_first_basket_rate": 0.0,
-              "model_prob": 0.0,
-              "odds_american": null,
-              "market_prob": null,
-              "edge": null,
-              "ev": null,
-              "is_positive_ev": null
-            },
-            {
-              "player_name": "Laeticia Amihere",
-              "team_id": "129689",
-              "historical_first_basket_rate": 0.0,
-              "model_prob": 0.0,
-              "odds_american": null,
-              "market_prob": null,
-              "edge": null,
-              "ev": null,
-              "is_positive_ev": null
-            },
-            {
-              "player_name": "Kaitlyn Chen",
-              "team_id": "129689",
-              "historical_first_basket_rate": 0.0,
-              "model_prob": 0.0,
-              "odds_american": null,
-              "market_prob": null,
-              "edge": null,
-              "ev": null,
-              "is_positive_ev": null
-            },
-            {
-              "player_name": "Nadia Fingall",
-              "team_id": "129689",
-              "historical_first_basket_rate": 0.0,
-              "model_prob": 0.0,
-              "odds_american": null,
-              "market_prob": null,
-              "edge": null,
-              "ev": null,
-              "is_positive_ev": null
-            },
-            {
-              "player_name": "Tiffany Hayes",
-              "team_id": "129689",
-              "historical_first_basket_rate": 0.0,
-              "model_prob": 0.0,
-              "odds_american": null,
-              "market_prob": null,
-              "edge": null,
-              "ev": null,
-              "is_positive_ev": null
-            },
-            {
-              "player_name": "Kaila Charles",
-              "team_id": "129689",
-              "historical_first_basket_rate": 0.0,
-              "model_prob": 0.0,
-              "odds_american": null,
-              "market_prob": null,
-              "edge": null,
-              "ev": null,
-              "is_positive_ev": null
-            },
-            {
-              "player_name": "Juste Jocyte",
-              "team_id": "129689",
-              "historical_first_basket_rate": 0.0,
-              "model_prob": 0.0,
-              "odds_american": null,
-              "market_prob": null,
-              "edge": null,
-              "ev": null,
-              "is_positive_ev": null
-            },
-            {
-              "player_name": "Ashten Prechtel",
-              "team_id": "129689",
-              "historical_first_basket_rate": 0.0,
-              "model_prob": 0.0,
-              "odds_american": null,
-              "market_prob": null,
-              "edge": null,
-              "ev": null,
-              "is_positive_ev": null
-            },
-            {
-              "player_name": "Janelle Salaun",
-              "team_id": "129689",
-              "historical_first_basket_rate": 0.0,
-              "model_prob": 0.0,
-              "odds_american": null,
-              "market_prob": null,
-              "edge": null,
-              "ev": null,
-              "is_positive_ev": null
-            },
-            {
-              "player_name": "Iliana Rupert",
-              "team_id": "129689",
-              "historical_first_basket_rate": 0.0,
-              "model_prob": 0.0,
-              "odds_american": null,
-              "market_prob": null,
-              "edge": null,
-              "ev": null,
-              "is_positive_ev": null
-            },
-            {
-              "player_name": "Miela Sowah",
-              "team_id": "129689",
-              "historical_first_basket_rate": 0.0,
-              "model_prob": 0.0,
-              "odds_american": null,
-              "market_prob": null,
-              "edge": null,
-              "ev": null,
-              "is_positive_ev": null
-            },
-            {
-              "player_name": "Kiah Stokes",
-              "team_id": "129689",
-              "historical_first_basket_rate": 0.0,
-              "model_prob": 0.0,
-              "odds_american": null,
-              "market_prob": null,
-              "edge": null,
-              "ev": null,
-              "is_positive_ev": null
-            },
-            {
-              "player_name": "Kayla Thornton",
-              "team_id": "129689",
-              "historical_first_basket_rate": 0.0,
-              "model_prob": 0.0,
-              "odds_american": null,
-              "market_prob": null,
-              "edge": null,
-              "ev": null,
-              "is_positive_ev": null
-            },
-            {
-              "player_name": "Gabby Williams",
-              "team_id": "129689",
-              "historical_first_basket_rate": 0.0,
-              "model_prob": 0.0,
-              "odds_american": null,
-              "market_prob": null,
-              "edge": null,
-              "ev": null,
-              "is_positive_ev": null
             }
           ]
         },
         {
-          "event_id": "401857177",
+          "event_id": "401857182",
           "teams": {
-            "14": {
-              "display_name": "Seattle Storm",
-              "abbreviation": "SEA"
+            "17": {
+              "display_name": "Las Vegas Aces",
+              "abbreviation": "LV"
             },
             "131935": {
               "display_name": "Toronto Tempo",
@@ -419,13 +789,13 @@
             }
           },
           "is_confirmed_starters": false,
-          "odds_note": "Odds API request failed: 422 Client Error: Unprocessable Entity for url: https://api.the-odds-api.com/v4/sports/basketball_wnba/events/3f4381eed1a924a849ea9959a1f16db1/odds?apiKey=***&regions=us&markets=player_first_basket_scorer&oddsFormat=american",
+          "odds_note": "Odds API request failed: 422 Client Error: Unprocessable Entity for url: https://api.the-odds-api.com/v4/sports/basketball_wnba/events/a59eb5f96bbf1e45008e6ab59d21db23/odds?apiKey=***&regions=us&markets=player_first_basket_scorer&oddsFormat=american",
           "players": [
             {
-              "player_name": "Dominique Malonga",
-              "team_id": "14",
-              "historical_first_basket_rate": 0.4,
-              "model_prob": 0.2,
+              "player_name": "Laura Juskaite",
+              "team_id": "131935",
+              "historical_first_basket_rate": 0.3333333333333333,
+              "model_prob": 0.16666666666666669,
               "odds_american": null,
               "market_prob": null,
               "edge": null,
@@ -435,8 +805,8 @@
             {
               "player_name": "Maria Conde",
               "team_id": "131935",
-              "historical_first_basket_rate": 0.4,
-              "model_prob": 0.2,
+              "historical_first_basket_rate": 0.3333333333333333,
+              "model_prob": 0.16666666666666669,
               "odds_american": null,
               "market_prob": null,
               "edge": null,
@@ -444,10 +814,10 @@
               "is_positive_ev": null
             },
             {
-              "player_name": "Jordan Horston",
-              "team_id": "14",
-              "historical_first_basket_rate": 0.2,
-              "model_prob": 0.1,
+              "player_name": "Chelsea Gray",
+              "team_id": "17",
+              "historical_first_basket_rate": 0.25,
+              "model_prob": 0.12500000000000003,
               "odds_american": null,
               "market_prob": null,
               "edge": null,
@@ -455,10 +825,10 @@
               "is_positive_ev": null
             },
             {
-              "player_name": "Flau'jae Johnson",
-              "team_id": "14",
-              "historical_first_basket_rate": 0.2,
-              "model_prob": 0.1,
+              "player_name": "NaLyssa Smith",
+              "team_id": "17",
+              "historical_first_basket_rate": 0.25,
+              "model_prob": 0.12500000000000003,
               "odds_american": null,
               "market_prob": null,
               "edge": null,
@@ -466,10 +836,10 @@
               "is_positive_ev": null
             },
             {
-              "player_name": "Marina Mabrey",
-              "team_id": "131935",
-              "historical_first_basket_rate": 0.2,
-              "model_prob": 0.1,
+              "player_name": "A'ja Wilson",
+              "team_id": "17",
+              "historical_first_basket_rate": 0.25,
+              "model_prob": 0.12500000000000003,
               "odds_american": null,
               "market_prob": null,
               "edge": null,
@@ -477,10 +847,10 @@
               "is_positive_ev": null
             },
             {
-              "player_name": "Laura Juskaite",
-              "team_id": "131935",
-              "historical_first_basket_rate": 0.2,
-              "model_prob": 0.1,
+              "player_name": "Jackie Young",
+              "team_id": "17",
+              "historical_first_basket_rate": 0.25,
+              "model_prob": 0.12500000000000003,
               "odds_american": null,
               "market_prob": null,
               "edge": null,
@@ -490,8 +860,8 @@
             {
               "player_name": "Temi Fagbenle",
               "team_id": "131935",
-              "historical_first_basket_rate": 0.2,
-              "model_prob": 0.1,
+              "historical_first_basket_rate": 0.16666666666666666,
+              "model_prob": 0.08333333333333334,
               "odds_american": null,
               "market_prob": null,
               "edge": null,
@@ -499,10 +869,10 @@
               "is_positive_ev": null
             },
             {
-              "player_name": "Jade Melbourne",
-              "team_id": "14",
-              "historical_first_basket_rate": 0.2,
-              "model_prob": 0.1,
+              "player_name": "Marina Mabrey",
+              "team_id": "131935",
+              "historical_first_basket_rate": 0.16666666666666666,
+              "model_prob": 0.08333333333333334,
               "odds_american": null,
               "market_prob": null,
               "edge": null,
@@ -510,8 +880,8 @@
               "is_positive_ev": null
             },
             {
-              "player_name": "Natisha Hiedeman",
-              "team_id": "14",
+              "player_name": "Ta'Niya Latson",
+              "team_id": "17",
               "historical_first_basket_rate": 0.0,
               "model_prob": 0.0,
               "odds_american": null,
@@ -521,8 +891,8 @@
               "is_positive_ev": null
             },
             {
-              "player_name": "Awa Fam",
-              "team_id": "14",
+              "player_name": "Dana Evans",
+              "team_id": "17",
               "historical_first_basket_rate": 0.0,
               "model_prob": 0.0,
               "odds_american": null,
@@ -532,8 +902,8 @@
               "is_positive_ev": null
             },
             {
-              "player_name": "Stefanie Dolson",
-              "team_id": "14",
+              "player_name": "Cheyenne Parker-Tyus",
+              "team_id": "17",
               "historical_first_basket_rate": 0.0,
               "model_prob": 0.0,
               "odds_american": null,
@@ -543,8 +913,8 @@
               "is_positive_ev": null
             },
             {
-              "player_name": "Zia Cooke",
-              "team_id": "14",
+              "player_name": "Kierstan Bell",
+              "team_id": "17",
               "historical_first_basket_rate": 0.0,
               "model_prob": 0.0,
               "odds_american": null,
@@ -554,8 +924,8 @@
               "is_positive_ev": null
             },
             {
-              "player_name": "Katie Lou Samuelson",
-              "team_id": "14",
+              "player_name": "Mai Yamamoto",
+              "team_id": "17",
               "historical_first_basket_rate": 0.0,
               "model_prob": 0.0,
               "odds_american": null,
@@ -565,8 +935,8 @@
               "is_positive_ev": null
             },
             {
-              "player_name": "Taina Mair",
-              "team_id": "14",
+              "player_name": "Brianna Turner",
+              "team_id": "17",
               "historical_first_basket_rate": 0.0,
               "model_prob": 0.0,
               "odds_american": null,
@@ -576,8 +946,8 @@
               "is_positive_ev": null
             },
             {
-              "player_name": "Mackenzie Holmes",
-              "team_id": "14",
+              "player_name": "Stephanie Talbot",
+              "team_id": "17",
               "historical_first_basket_rate": 0.0,
               "model_prob": 0.0,
               "odds_american": null,
@@ -587,8 +957,19 @@
               "is_positive_ev": null
             },
             {
-              "player_name": "Ezi Magbegor",
-              "team_id": "14",
+              "player_name": "Justine Pissott",
+              "team_id": "17",
+              "historical_first_basket_rate": 0.0,
+              "model_prob": 0.0,
+              "odds_american": null,
+              "market_prob": null,
+              "edge": null,
+              "ev": null,
+              "is_positive_ev": null
+            },
+            {
+              "player_name": "Jewell Loyd",
+              "team_id": "17",
               "historical_first_basket_rate": 0.0,
               "model_prob": 0.0,
               "odds_american": null,
@@ -599,17 +980,6 @@
             },
             {
               "player_name": "Ornella Bankole",
-              "team_id": "131935",
-              "historical_first_basket_rate": 0.0,
-              "model_prob": 0.0,
-              "odds_american": null,
-              "market_prob": null,
-              "edge": null,
-              "ev": null,
-              "is_positive_ev": null
-            },
-            {
-              "player_name": "Julie Allemand",
               "team_id": "131935",
               "historical_first_basket_rate": 0.0,
               "model_prob": 0.0,
@@ -631,8 +1001,8 @@
               "is_positive_ev": null
             },
             {
-              "player_name": "Taylor Thierry",
-              "team_id": "14",
+              "player_name": "Julie Allemand",
+              "team_id": "131935",
               "historical_first_basket_rate": 0.0,
               "model_prob": 0.0,
               "odds_american": null,
@@ -721,6 +1091,320 @@
             {
               "player_name": "Kiana Williams",
               "team_id": "131935",
+              "historical_first_basket_rate": 0.0,
+              "model_prob": 0.0,
+              "odds_american": null,
+              "market_prob": null,
+              "edge": null,
+              "ev": null,
+              "is_positive_ev": null
+            }
+          ]
+        },
+        {
+          "event_id": "401857183",
+          "teams": {
+            "6": {
+              "display_name": "Los Angeles Sparks",
+              "abbreviation": "LA"
+            },
+            "16": {
+              "display_name": "Washington Mystics",
+              "abbreviation": "WSH"
+            }
+          },
+          "is_confirmed_starters": false,
+          "odds_note": "Odds API request failed: 422 Client Error: Unprocessable Entity for url: https://api.the-odds-api.com/v4/sports/basketball_wnba/events/1b26020bcb94ee4afa6296071e87834f/odds?apiKey=***&regions=us&markets=player_first_basket_scorer&oddsFormat=american",
+          "players": [
+            {
+              "player_name": "Shakira Austin",
+              "team_id": "16",
+              "historical_first_basket_rate": 0.8,
+              "model_prob": 0.4,
+              "odds_american": null,
+              "market_prob": null,
+              "edge": null,
+              "ev": null,
+              "is_positive_ev": null
+            },
+            {
+              "player_name": "Dearica Hamby",
+              "team_id": "6",
+              "historical_first_basket_rate": 0.6666666666666666,
+              "model_prob": 0.3333333333333333,
+              "odds_american": null,
+              "market_prob": null,
+              "edge": null,
+              "ev": null,
+              "is_positive_ev": null
+            },
+            {
+              "player_name": "Nneka Ogwumike",
+              "team_id": "6",
+              "historical_first_basket_rate": 0.3333333333333333,
+              "model_prob": 0.16666666666666666,
+              "odds_american": null,
+              "market_prob": null,
+              "edge": null,
+              "ev": null,
+              "is_positive_ev": null
+            },
+            {
+              "player_name": "Michaela Onyenwere",
+              "team_id": "16",
+              "historical_first_basket_rate": 0.2,
+              "model_prob": 0.1,
+              "odds_american": null,
+              "market_prob": null,
+              "edge": null,
+              "ev": null,
+              "is_positive_ev": null
+            },
+            {
+              "player_name": "Ariel Atkins",
+              "team_id": "6",
+              "historical_first_basket_rate": 0.0,
+              "model_prob": 0.0,
+              "odds_american": null,
+              "market_prob": null,
+              "edge": null,
+              "ev": null,
+              "is_positive_ev": null
+            },
+            {
+              "player_name": "Cameron Brink",
+              "team_id": "6",
+              "historical_first_basket_rate": 0.0,
+              "model_prob": 0.0,
+              "odds_american": null,
+              "market_prob": null,
+              "edge": null,
+              "ev": null,
+              "is_positive_ev": null
+            },
+            {
+              "player_name": "Rae Burrell",
+              "team_id": "6",
+              "historical_first_basket_rate": 0.0,
+              "model_prob": 0.0,
+              "odds_american": null,
+              "market_prob": null,
+              "edge": null,
+              "ev": null,
+              "is_positive_ev": null
+            },
+            {
+              "player_name": "Chance Gray",
+              "team_id": "6",
+              "historical_first_basket_rate": 0.0,
+              "model_prob": 0.0,
+              "odds_american": null,
+              "market_prob": null,
+              "edge": null,
+              "ev": null,
+              "is_positive_ev": null
+            },
+            {
+              "player_name": "Kate Martin",
+              "team_id": "6",
+              "historical_first_basket_rate": 0.0,
+              "model_prob": 0.0,
+              "odds_american": null,
+              "market_prob": null,
+              "edge": null,
+              "ev": null,
+              "is_positive_ev": null
+            },
+            {
+              "player_name": "Emma Cannon",
+              "team_id": "6",
+              "historical_first_basket_rate": 0.0,
+              "model_prob": 0.0,
+              "odds_american": null,
+              "market_prob": null,
+              "edge": null,
+              "ev": null,
+              "is_positive_ev": null
+            },
+            {
+              "player_name": "Monique Akoa Makani",
+              "team_id": "6",
+              "historical_first_basket_rate": 0.0,
+              "model_prob": 0.0,
+              "odds_american": null,
+              "market_prob": null,
+              "edge": null,
+              "ev": null,
+              "is_positive_ev": null
+            },
+            {
+              "player_name": "Jihyun Park",
+              "team_id": "6",
+              "historical_first_basket_rate": 0.0,
+              "model_prob": 0.0,
+              "odds_american": null,
+              "market_prob": null,
+              "edge": null,
+              "ev": null,
+              "is_positive_ev": null
+            },
+            {
+              "player_name": "Tonie Morgan",
+              "team_id": "6",
+              "historical_first_basket_rate": 0.0,
+              "model_prob": 0.0,
+              "odds_american": null,
+              "market_prob": null,
+              "edge": null,
+              "ev": null,
+              "is_positive_ev": null
+            },
+            {
+              "player_name": "Erica Wheeler",
+              "team_id": "6",
+              "historical_first_basket_rate": 0.0,
+              "model_prob": 0.0,
+              "odds_american": null,
+              "market_prob": null,
+              "edge": null,
+              "ev": null,
+              "is_positive_ev": null
+            },
+            {
+              "player_name": "Alissa Pili",
+              "team_id": "6",
+              "historical_first_basket_rate": 0.0,
+              "model_prob": 0.0,
+              "odds_american": null,
+              "market_prob": null,
+              "edge": null,
+              "ev": null,
+              "is_positive_ev": null
+            },
+            {
+              "player_name": "Lauren Betts",
+              "team_id": "16",
+              "historical_first_basket_rate": 0.0,
+              "model_prob": 0.0,
+              "odds_american": null,
+              "market_prob": null,
+              "edge": null,
+              "ev": null,
+              "is_positive_ev": null
+            },
+            {
+              "player_name": "Sonia Citron",
+              "team_id": "16",
+              "historical_first_basket_rate": 0.0,
+              "model_prob": 0.0,
+              "odds_american": null,
+              "market_prob": null,
+              "edge": null,
+              "ev": null,
+              "is_positive_ev": null
+            },
+            {
+              "player_name": "Angela Dugalic",
+              "team_id": "16",
+              "historical_first_basket_rate": 0.0,
+              "model_prob": 0.0,
+              "odds_american": null,
+              "market_prob": null,
+              "edge": null,
+              "ev": null,
+              "is_positive_ev": null
+            },
+            {
+              "player_name": "Georgia Amoore",
+              "team_id": "16",
+              "historical_first_basket_rate": 0.0,
+              "model_prob": 0.0,
+              "odds_american": null,
+              "market_prob": null,
+              "edge": null,
+              "ev": null,
+              "is_positive_ev": null
+            },
+            {
+              "player_name": "Alicia Florez",
+              "team_id": "16",
+              "historical_first_basket_rate": 0.0,
+              "model_prob": 0.0,
+              "odds_american": null,
+              "market_prob": null,
+              "edge": null,
+              "ev": null,
+              "is_positive_ev": null
+            },
+            {
+              "player_name": "Rori Harmon",
+              "team_id": "16",
+              "historical_first_basket_rate": 0.0,
+              "model_prob": 0.0,
+              "odds_american": null,
+              "market_prob": null,
+              "edge": null,
+              "ev": null,
+              "is_positive_ev": null
+            },
+            {
+              "player_name": "Betnijah Laney-Hamilton",
+              "team_id": "16",
+              "historical_first_basket_rate": 0.0,
+              "model_prob": 0.0,
+              "odds_american": null,
+              "market_prob": null,
+              "edge": null,
+              "ev": null,
+              "is_positive_ev": null
+            },
+            {
+              "player_name": "Kiki Iriafen",
+              "team_id": "16",
+              "historical_first_basket_rate": 0.0,
+              "model_prob": 0.0,
+              "odds_american": null,
+              "market_prob": null,
+              "edge": null,
+              "ev": null,
+              "is_positive_ev": null
+            },
+            {
+              "player_name": "Darianna Littlepage-Buggs",
+              "team_id": "16",
+              "historical_first_basket_rate": 0.0,
+              "model_prob": 0.0,
+              "odds_american": null,
+              "market_prob": null,
+              "edge": null,
+              "ev": null,
+              "is_positive_ev": null
+            },
+            {
+              "player_name": "Cotie McMahon",
+              "team_id": "16",
+              "historical_first_basket_rate": 0.0,
+              "model_prob": 0.0,
+              "odds_american": null,
+              "market_prob": null,
+              "edge": null,
+              "ev": null,
+              "is_positive_ev": null
+            },
+            {
+              "player_name": "Lucy Olsen",
+              "team_id": "16",
+              "historical_first_basket_rate": 0.0,
+              "model_prob": 0.0,
+              "odds_american": null,
+              "market_prob": null,
+              "edge": null,
+              "ev": null,
+              "is_positive_ev": null
+            },
+            {
+              "player_name": "Cassandre Prosper",
+              "team_id": "16",
               "historical_first_basket_rate": 0.0,
               "model_prob": 0.0,
               "odds_american": null,
