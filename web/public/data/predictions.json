@@ -1,13 +1,170 @@
 {
-  "generated_at": "Oct 23, 2026 11:55 PM",
-  "schedule": [],
+  "generated_at": "Oct 24, 2026 11:31 PM",
+  "schedule": [
+    {
+      "event_id": "401918308",
+      "start_time_iso": "2026-10-24T17:00Z",
+      "start_time_display": "Final",
+      "status": "Final",
+      "venue": {
+        "name": "State Farm Arena",
+        "city": "Atlanta",
+        "state": "GA"
+      },
+      "broadcasts": [
+        "NBC"
+      ],
+      "teams": {
+        "20": {
+          "display_name": "Atlanta Dream",
+          "abbreviation": "ATL",
+          "home_away": "home",
+          "record": "30-14"
+        },
+        "129689": {
+          "display_name": "Golden State Valkyries",
+          "abbreviation": "GS",
+          "home_away": "away",
+          "record": "32-12"
+        }
+      }
+    }
+  ],
   "markets": [
     {
       "id": "first_basket",
       "label": "First Basket",
       "description": "Probability each player scores the game's first field goal.",
       "status": "active",
-      "games": []
+      "games": [
+        {
+          "event_id": "401918308",
+          "teams": {
+            "20": {
+              "display_name": "Atlanta Dream",
+              "abbreviation": "ATL"
+            },
+            "129689": {
+              "display_name": "Golden State Valkyries",
+              "abbreviation": "GS"
+            }
+          },
+          "is_confirmed_starters": true,
+          "odds_note": "Odds API request failed: 422 Client Error: Unprocessable Entity for url: https://api.the-odds-api.com/v4/sports/basketball_wnba/events/08bda2a9513ed888c66e834f88ddd65f/odds?apiKey=***&regions=us&markets=player_first_basket_scorer&oddsFormat=american",
+          "players": [
+            {
+              "player_name": "Gabby Williams",
+              "team_id": "129689",
+              "historical_first_basket_rate": 0.5,
+              "model_prob": 0.3333333333333333,
+              "odds_american": null,
+              "market_prob": null,
+              "edge": null,
+              "ev": null,
+              "is_positive_ev": null
+            },
+            {
+              "player_name": "Jordin Canada",
+              "team_id": "20",
+              "historical_first_basket_rate": 0.4,
+              "model_prob": 0.26666666666666666,
+              "odds_american": null,
+              "market_prob": null,
+              "edge": null,
+              "ev": null,
+              "is_positive_ev": null
+            },
+            {
+              "player_name": "Angel Reese",
+              "team_id": "20",
+              "historical_first_basket_rate": 0.2,
+              "model_prob": 0.13333333333333333,
+              "odds_american": null,
+              "market_prob": null,
+              "edge": null,
+              "ev": null,
+              "is_positive_ev": null
+            },
+            {
+              "player_name": "Rhyne Howard",
+              "team_id": "20",
+              "historical_first_basket_rate": 0.2,
+              "model_prob": 0.13333333333333333,
+              "odds_american": null,
+              "market_prob": null,
+              "edge": null,
+              "ev": null,
+              "is_positive_ev": null
+            },
+            {
+              "player_name": "Allisha Gray",
+              "team_id": "20",
+              "historical_first_basket_rate": 0.2,
+              "model_prob": 0.13333333333333333,
+              "odds_american": null,
+              "market_prob": null,
+              "edge": null,
+              "ev": null,
+              "is_positive_ev": null
+            },
+            {
+              "player_name": "Kiah Stokes",
+              "team_id": "129689",
+              "historical_first_basket_rate": 0.0,
+              "model_prob": 0.0,
+              "odds_american": null,
+              "market_prob": null,
+              "edge": null,
+              "ev": null,
+              "is_positive_ev": null
+            },
+            {
+              "player_name": "Naz Hillmon",
+              "team_id": "20",
+              "historical_first_basket_rate": 0.0,
+              "model_prob": 0.0,
+              "odds_american": null,
+              "market_prob": null,
+              "edge": null,
+              "ev": null,
+              "is_positive_ev": null
+            },
+            {
+              "player_name": "Veronica Burton",
+              "team_id": "129689",
+              "historical_first_basket_rate": 0.0,
+              "model_prob": 0.0,
+              "odds_american": null,
+              "market_prob": null,
+              "edge": null,
+              "ev": null,
+              "is_positive_ev": null
+            },
+            {
+              "player_name": "Kaila Charles",
+              "team_id": "129689",
+              "historical_first_basket_rate": 0.0,
+              "model_prob": 0.0,
+              "odds_american": null,
+              "market_prob": null,
+              "edge": null,
+              "ev": null,
+              "is_positive_ev": null
+            },
+            {
+              "player_name": "Tiffany Hayes",
+              "team_id": "129689",
+              "historical_first_basket_rate": 0.0,
+              "model_prob": 0.0,
+              "odds_american": null,
+              "market_prob": null,
+              "edge": null,
+              "ev": null,
+              "is_positive_ev": null
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "player_points",
